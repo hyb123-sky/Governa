@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 10:00:51</sys_created_on>
+        <sys_id>0a1cce15c3178710f9ef98bc0501310e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1821654_governa_agent.x_1821654_governa.governa_agent_user</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_security_acl display_value="x_1821654_governa_agent">c21cce15c3178710f9ef98bc05013108</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0a1cce15c3178710f9ef98bc0501310e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 10:00:51</sys_updated_on>
+        <sys_user_role display_value="x_1821654_governa.governa_agent_user" name="x_1821654_governa.governa_agent_user">7d1cc215c3178710f9ef98bc0501317f</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

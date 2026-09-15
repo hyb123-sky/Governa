@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Governa Requirement" language="en" table="x_1821654_governa_requirement">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Governa Requirement</label>
+            <language>en</language>
+            <name>x_1821654_governa_requirement</name>
+            <plural>Governa Requirements</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-12 09:35:13</sys_created_on>
+            <sys_id>b6364a95c3d38710f9ef98bc050131c3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Governa Requirement</sys_name>
+            <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+            <sys_update_name>sys_documentation_x_1821654_governa_requirement__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-12 09:35:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
