@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1ddb8215c3178710f9ef98bc050131d2" label="Governa Agent" max_length="40" name="x_1821654_governa_agent" type="collection">
+        <element label="Tool manifest" max_length="8000" name="tool_manifest" type="string"/>
+        <element choice="1" label="Provider" max_length="40" name="provider" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Anthropic" value="anthropic"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element choice="1" label="Risk Class" max_length="40" name="risk_class" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Limited" value="limited"/>
+                <element inactive_on_update="false" label="Minimal" value="minimal"/>
+                <element inactive_on_update="false" label="High" value="high"/>
+                <element inactive_on_update="false" label="Unacceptable" value="unacceptable"/>
+            </choice>
+        </element>
+        <element label="Owner" max_length="32" name="owner" reference="sys_user" type="reference"/>
+        <element label="Model" max_length="100" name="model" type="string"/>
+        <element label="Intended purpose" max_length="4000" name="intended_purpose" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Under Evaluation" value="under evaluation"/>
+                <element inactive_on_update="false" label="Retired" value="retired"/>
+                <element inactive_on_update="false" label="Draft" value="draft"/>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+            </choice>
+        </element>
+        <element label="Version" max_length="40" name="version" type="string"/>
+        <index name="index">
+            <element name="owner"/>
+        </index>
+    </element>
+</database>

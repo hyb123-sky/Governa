@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1184f896c35f8f10f9ef98bc05013178" label="Governa Action" max_length="40" name="x_1821654_governa_action" type="collection">
+        <element label="Target table" max_length="80" name="target_table" type="string"/>
+        <element label="Oversight" max_length="32" name="oversight" reference="x_1821654_governa_oversight" type="reference"/>
+        <element label="Params hash" max_length="64" name="params_hash" type="string"/>
+        <element label="Policy" max_length="32" name="policy" reference="x_1821654_governa_policy" type="reference"/>
+        <element label="Occurred at" max_length="40" name="occurred_at" type="glide_date_time"/>
+        <element label="Target sys_id" max_length="32" name="target_sys_id" type="string"/>
+        <element label="Tool" max_length="100" name="tool" type="string"/>
+        <element label="Sequence" max_length="40" name="sequence" type="integer"/>
+        <element choice="1" label="Policy decision" max_length="40" name="policy_decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Allow"/>
+                <element inactive_on_update="false" label="Needs approval"/>
+                <element inactive_on_update="false" label="Deny"/>
+            </choice>
+        </element>
+        <element label="Executed" max_length="40" name="executed" type="boolean"/>
+        <index name="index">
+            <element name="oversight"/>
+        </index>
+        <index name="index2">
+            <element name="policy"/>
+        </index>
+    </element>
+</database>

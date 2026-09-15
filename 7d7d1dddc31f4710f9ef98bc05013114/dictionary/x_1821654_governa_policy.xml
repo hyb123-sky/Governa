@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7b9ee09ec3db8f10f9ef98bc05013115" label="Governa Policy" max_length="40" name="x_1821654_governa_policy" type="collection">
+        <element label="Requirement" max_length="32" name="requirement" reference="x_1821654_governa_requirement" type="reference"/>
+        <element choice="1" default="true" label="Severity" max_length="40" name="severity" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="True" value="true"/>
+                <element inactive_on_update="false" label="False" value="false"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded(current)" label="Name" max_length="100" name="name" type="string"/>
+        <element choice="1" label="Effect" max_length="40" name="effect" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Log" value="log"/>
+                <element inactive_on_update="false" label="Needs Approval" value="needs approval"/>
+                <element inactive_on_update="false" label="Deny" value="deny"/>
+            </choice>
+        </element>
+        <element label="Rule" max_length="8000" name="rule" type="string"/>
+        <index name="index">
+            <element name="requirement"/>
+        </index>
+    </element>
+</database>

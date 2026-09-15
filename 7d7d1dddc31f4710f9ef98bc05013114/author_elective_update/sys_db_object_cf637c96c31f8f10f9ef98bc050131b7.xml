@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <filter_extension/>
+        <is_data_interface>false</is_data_interface>
+        <is_df_table>false</is_df_table>
+        <is_extendable>false</is_extendable>
+        <label>Governa Oversight</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_1821654_governa_governa_oversight</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class display_value="Task" name="task">83e4d024f54003100a22c0b3dfa15116</super_class>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 06:07:46</sys_created_on>
+        <sys_id>cf637c96c31f8f10f9ef98bc050131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Governa Oversight</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_db_object_cf637c96c31f8f10f9ef98bc050131b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 06:07:46</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_1821654_governa.governa_oversight_user" name="x_1821654_governa.governa_oversight_user">09837cd2c35f8f10f9ef98bc05013196</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</application>
+        <file_path/>
+        <instance_id>ab181c013be46e18a36804e0b5e45a68</instance_id>
+        <instance_name>dev310526</instance_name>
+        <name>sys_db_object_cf637c96c31f8f10f9ef98bc050131b7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><filter_extension/><is_data_interface>false</is_data_interface><is_df_table>false</is_df_table><is_extendable>false</is_extendable><label>Governa Oversight</label><live_feed_enabled>false</live_feed_enabled><name>x_1821654_governa_governa_oversight</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class display_value="Task" name="task">83e4d024f54003100a22c0b3dfa15116</super_class><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-15 06:07:46</sys_created_on><sys_id>cf637c96c31f8f10f9ef98bc050131b7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Governa Oversight</sys_name><sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package><sys_policy/><sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope><sys_update_name>sys_db_object_cf637c96c31f8f10f9ef98bc050131b7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-15 06:07:46</sys_updated_on><update_access>false</update_access><user_role display_value="x_1821654_governa.governa_oversight_user" name="x_1821654_governa.governa_oversight_user">09837cd2c35f8f10f9ef98bc05013196</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>194868338</payload_hash>
+        <record_name>Governa Oversight</record_name>
+        <reverted_from/>
+        <source>20b18ad9c3938710f9ef98bc05013188</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 06:07:47</sys_created_on>
+        <sys_id>a583fcd2c35f8f10f9ef98bc05013136</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0a3adbead0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 06:07:47</sys_updated_on>
+        <type>Table</type>
+        <update_guid>6583fcd2125f8f10d46a947a8fd06235</update_guid>
+        <update_guid_history>6583fcd2125f8f10d46a947a8fd06235:194868338</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 06:20:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>9fd6ee1655ca48c5a7cb3950a19ff909</sys_id>
+        <sys_metadata>cf637c96c31f8f10f9ef98bc050131b7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Governa Oversight</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_scope_delete display_value="">1c26bb83a1c648838b2c88c4ee127a31</sys_scope_delete>
+        <sys_update_name>sys_db_object_cf637c96c31f8f10f9ef98bc050131b7</sys_update_name>
+        <sys_update_version display_value="sys_db_object_cf637c96c31f8f10f9ef98bc050131b7">a583fcd2c35f8f10f9ef98bc05013136</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 06:20:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 10:00:50</sys_created_on>
+        <sys_id>c61c8e15c3178710f9ef98bc050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1821654_governa_agent.x_1821654_governa.governa_agent_user</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_security_acl display_value="x_1821654_governa_agent">ca1c8e15c3178710f9ef98bc050131c5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_c61c8e15c3178710f9ef98bc050131d8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 10:00:50</sys_updated_on>
+        <sys_user_role display_value="x_1821654_governa.governa_agent_user" name="x_1821654_governa.governa_agent_user">7d1cc215c3178710f9ef98bc0501317f</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</application>
+        <file_path/>
+        <instance_id>ab181c013be46e18a36804e0b5e45a68</instance_id>
+        <instance_name>dev310526</instance_name>
+        <name>sys_security_acl_role_c61c8e15c3178710f9ef98bc050131d8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-12 10:00:50</sys_created_on><sys_id>c61c8e15c3178710f9ef98bc050131d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1821654_governa_agent.x_1821654_governa.governa_agent_user</sys_name><sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package><sys_policy/><sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope><sys_security_acl display_value="x_1821654_governa_agent">ca1c8e15c3178710f9ef98bc050131c5</sys_security_acl><sys_update_name>sys_security_acl_role_c61c8e15c3178710f9ef98bc050131d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-12 10:00:50</sys_updated_on><sys_user_role display_value="x_1821654_governa.governa_agent_user" name="x_1821654_governa.governa_agent_user">7d1cc215c3178710f9ef98bc0501317f</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-748271715</payload_hash>
+        <record_name>x_1821654_governa_agent.x_1821654_governa.governa_agent_user</record_name>
+        <reverted_from/>
+        <source>20b18ad9c3938710f9ef98bc05013188</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-12 10:00:51</sys_created_on>
+        <sys_id>c21cce15c3178710f9ef98bc05013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0951008810000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-12 10:00:51</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>821cce15e2178710d68d77b0d47a9e06</update_guid>
+        <update_guid_history>821cce15e2178710d68d77b0d47a9e06:-748271715</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1821654_governa_agent.x_1821654_governa.governa_agent_user">579bc992c353cf10f9ef98bc050131fa</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 07:53:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>23c530ee5c454c888c73c47b38787ca4</sys_id>
+        <sys_metadata>c61c8e15c3178710f9ef98bc050131d8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1821654_governa_agent.x_1821654_governa.governa_agent_user</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_parent display_value="x_1821654_governa_agent">ca1c8e15c3178710f9ef98bc050131c5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_scope_delete display_value="">1c26bb83a1c648838b2c88c4ee127a31</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_c61c8e15c3178710f9ef98bc050131d8</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_c61c8e15c3178710f9ef98bc050131d8">c21cce15c3178710f9ef98bc05013107</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 07:53:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

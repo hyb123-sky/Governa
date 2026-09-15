@@ -4,7 +4,7 @@
         <can_delegate>true</can_delegate>
         <description>Governa harness service account. Create/read on run, action, evidence. Read on policy/requirement. Create on oversight.</description>
         <elevated_privilege>false</elevated_privilege>
-        <federated_id/>
+        <federated_id>G5xhb/onuJQ6Q9552wVVVmSWM7vEnpMP0R8wgOfm3us=</federated_id>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_1821654_governa.agent</name>

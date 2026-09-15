@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="428634dac35f8f10f9ef98bc0501313e" extends="task" label="Governa Oversight" max_length="40" name="x_1821654_governa_oversight" type="collection">
+        <element choice="1" label="Decision" max_length="40" name="decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" value="rejected"/>
+                <element inactive_on_update="false" label="Pending" value="pending"/>
+            </choice>
+        </element>
+        <element label="Action" max_length="32" name="action" reference="x_1821654_governa_action" type="reference"/>
+        <element label="Decided at" max_length="40" name="decided_at" type="glide_date_time"/>
+        <element label="Decided by" max_length="32" name="decided_by" reference="sys_user" type="reference"/>
+        <element label="Proposed change" max_length="8000" name="proposed_change" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="9dc7fcdec35f8f10f9ef98bc050131b9" label="Governa Evidence" max_length="40" name="x_1821654_governa_evidence" type="collection">
+        <element label="Value" max_length="200" name="value" type="string"/>
+        <element label="Metric" max_length="100" name="metric" type="string"/>
+        <element label="Run" max_length="32" name="run" reference="x_1821654_governa_run" type="reference"/>
+        <element label="Requirement" max_length="32" name="requirement" reference="x_1821654_governa_requirement" type="reference"/>
+        <element label="Unit" max_length="40" name="unit" type="string"/>
+        <index name="index">
+            <element name="requirement"/>
+        </index>
+        <index name="index2">
+            <element name="run"/>
+        </index>
+    </element>
+</database>

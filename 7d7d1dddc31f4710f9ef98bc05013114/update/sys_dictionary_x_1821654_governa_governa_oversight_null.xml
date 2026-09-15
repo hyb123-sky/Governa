@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="task" table="x_1821654_governa_governa_oversight">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_1821654_governa_governa_oversight">
         <active>true</active>
         <array>false</array>
         <attributes>enforce_dot_walk_cross_scope_access=true</attributes>
@@ -53,7 +53,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-15 06:07:46</sys_created_on>
-        <sys_id>5583bcd2c35f8f10f9ef98bc050131e2</sys_id>
         <sys_name>x_1821654_governa_governa_oversight</sys_name>
         <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
         <sys_policy/>

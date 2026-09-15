@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="c2e486d1c3d38710f9ef98bc050131b2" label="Governa Requirement" max_length="40" name="x_1821654_governa_requirement" type="collection">
+        <element label="title" max_length="200" name="title" type="string"/>
+        <element label="statement" max_length="4000" name="statement" type="string"/>
+        <element choice="1" label="Source" max_length="40" name="source" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Internal" value="internal"/>
+                <element inactive_on_update="false" label="Eu AI Act" value="eu_ai_act"/>
+                <element inactive_on_update="false" label="Customer" value="customer"/>
+            </choice>
+        </element>
+        <element label="article" max_length="40" name="article" type="string"/>
+        <element label="number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Verification Method" max_length="40" name="verification_method" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Metric" value="metric"/>
+                <element inactive_on_update="false" label="Document" value="document"/>
+                <element inactive_on_update="false" label="Policy" value="policy"/>
+                <element inactive_on_update="false" label="Review" value="review"/>
+            </choice>
+        </element>
+    </element>
+</database>
