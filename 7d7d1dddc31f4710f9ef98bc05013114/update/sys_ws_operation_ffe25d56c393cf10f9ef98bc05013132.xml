@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>33e5995ec393cf10f9ef98bc050131e2</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Add actions</name>
+        <operation_script><![CDATA[(function process(request, response) {
+    var runId = request.pathParams.run_id;
+    var items = request.body.data.actions || [];
+    var ids = [];
+    for (var i = 0; i < items.length; i++) {
+        var a = items[i];
+        var gr = new GlideRecord('x_1821654_governa_action');
+        gr.initialize();
+        gr.setValue('run', runId);
+        gr.setValue('sequence', a.sequence);
+        gr.setValue('tool', a.tool);
+        gr.setValue('target_table', a.target_table || '');
+        gr.setValue('target_sys_id', a.target_sys_id || '');
+        gr.setValue('params_hash', a.params_hash || '');
+        gr.setValue('policy_decision', a.policy_decision || 'allow');
+        gr.setValue('executed', a.executed === true);
+        gr.setValue('occurred_at', a.occurred_at);
+        ids.push(gr.insert());
+    }
+    response.setStatus(201);
+    return { inserted: ids.length, sys_ids: ids };
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1821654_governa/ledger/runs/{run_id}/actions</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/runs/{run_id}/actions</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 08:25:28</sys_created_on>
+        <sys_id>ffe25d56c393cf10f9ef98bc05013132</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add actions</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_ws_operation_ffe25d56c393cf10f9ef98bc05013132</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 08:38:59</sys_updated_on>
+        <web_service_definition display_value="Ledger">5680551ac353cf10f9ef98bc05013145</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

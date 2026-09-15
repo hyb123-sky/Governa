@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>4075d11ec393cf10f9ef98bc050131c3</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Create run</name>
+        <operation_script><![CDATA[(function process(request, response) {
+    var body = request.body.data;
+    if (!body.task_id || !body.agent) {
+        response.setStatus(400);
+        return { error: 'task_id and agent are required' };
+    }
+    var gr = new GlideRecord('x_1821654_governa_run');
+    gr.initialize();
+    gr.setValue('agent', body.agent);
+    gr.setValue('task_id', body.task_id);
+    gr.setValue('task_version', body.task_version || '');
+    gr.setValue('seed', body.seed || '');
+    gr.setValue('harness_version', body.harness_version || '');
+    gr.setValue('started_at', new GlideDateTime());
+    var sysId = gr.insert();
+    if (!sysId) { response.setStatus(500); return { error: 'insert failed' }; }
+    response.setStatus(201);
+    return { sys_id: sysId, number: gr.getValue('number') };
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1821654_governa/ledger/runs</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/runs</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-15 08:24:10</sys_created_on>
+        <sys_id>7dd115d2c393cf10f9ef98bc0501312b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Create run</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_ws_operation_7dd115d2c393cf10f9ef98bc0501312b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-15 08:36:49</sys_updated_on>
+        <web_service_definition display_value="Ledger">5680551ac353cf10f9ef98bc05013145</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
