@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7b9ee09ec3db8f10f9ef98bc05013115" label="Governa Policy" max_length="40" name="x_1821654_governa_policy" type="collection">
+        <element label="Withdrawn Reason" max_length="4000" name="withdrawn_reason" type="string"/>
         <element label="Requirement" max_length="32" name="requirement" reference="x_1821654_governa_requirement" type="reference"/>
+        <element label="Effevtive to" max_length="40" name="effevtive_to" type="glide_date_time"/>
         <element choice="1" default="true" label="Severity" max_length="40" name="severity" type="choice">
             <choice>
                 <element inactive_on_update="false" label="True" value="true"/>
@@ -8,6 +10,16 @@
             </choice>
         </element>
         <element default="javascript:global.getNextObjNumberPadded(current)" label="Name" max_length="100" name="name" type="string"/>
+        <element default="1" label="Version" max_length="40" name="version" type="integer"/>
+        <element label="Rule Hash" max_length="64" name="rule_hash" type="string"/>
+        <element choice="1" label="Enforcement tier" max_length="40" name="enforcement_tier" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Instance Acl"/>
+                <element inactive_on_update="false" label="Both"/>
+                <element inactive_on_update="false" label="Instance Rule"/>
+                <element inactive_on_update="false" label="Harness"/>
+            </choice>
+        </element>
         <element choice="1" label="Effect" max_length="40" name="effect" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Log" value="log"/>
@@ -15,9 +27,31 @@
                 <element inactive_on_update="false" label="Deny" value="deny"/>
             </choice>
         </element>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" value="draft"/>
+                <element inactive_on_update="false" label="Withdrawn" value="withdrawn"/>
+                <element inactive_on_update="false" label="Active" value="active"/>
+                <element inactive_on_update="false" label="Retired" value="retired"/>
+            </choice>
+        </element>
+        <element label="Effevtive from" max_length="40" name="effevtive_from" type="glide_date_time"/>
+        <element label="Supersedes" max_length="32" name="supersedes" reference="x_1821654_governa_policy" type="reference"/>
+        <element label="Control" max_length="32" name="control" reference="x_1821654_governa_control" type="reference"/>
+        <element default="100" label="Precedence" max_length="40" name="precedence" type="integer"/>
         <element label="Rule" max_length="8000" name="rule" type="string"/>
         <index name="index">
+            <element name="control"/>
+        </index>
+        <index name="index2" unique="true">
+            <element name="name"/>
+            <element name="version"/>
+        </index>
+        <index name="index3">
             <element name="requirement"/>
+        </index>
+        <index name="index4">
+            <element name="supersedes"/>
         </index>
     </element>
 </database>

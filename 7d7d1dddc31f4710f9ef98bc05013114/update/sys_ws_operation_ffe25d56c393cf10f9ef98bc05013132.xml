@@ -9,6 +9,9 @@
         <name>Add actions</name>
         <operation_script><![CDATA[(function process(request, response) {
     var runId = request.pathParams.run_id;
+    // 调试日志 1：记录传入的 run_id 及其类型
+    gs.info('[governa-diag] runId=' + runId + ' | typeof=' + typeof runId);
+
     var items = request.body.data.actions || [];
     var ids = [];
     for (var i = 0; i < items.length; i++) {
@@ -24,7 +27,18 @@
         gr.setValue('policy_decision', a.policy_decision || 'allow');
         gr.setValue('executed', a.executed === true);
         gr.setValue('occurred_at', a.occurred_at);
-        ids.push(gr.insert());
+        
+        // B-4 新增接收字段
+        if (a.latency_ms !== undefined) gr.setValue('latency_ms', a.latency_ms);
+        if (a.policy_version !== undefined) gr.setValue('policy_version', a.policy_version);
+        if (a.policy_rule_hash) gr.setValue('policy_rule_hash', a.policy_rule_hash);
+        if (a.matched_policies) gr.setValue('matched_policies', a.matched_policies);
+        if (a.deny_reason) gr.setValue('deny_reason', a.deny_reason);
+
+        // 拆开 insert 操作并打印调试日志 2
+        var newId = gr.insert();
+        gs.info('[governa-diag] inserted=' + newId + ' | run(after)=' + gr.getValue('run'));
+        ids.push(newId);
     }
     response.setStatus(201);
     return { inserted: ids.length, sys_ids: ids };
@@ -43,14 +57,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-15 08:25:28</sys_created_on>
         <sys_id>ffe25d56c393cf10f9ef98bc05013132</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Add actions</sys_name>
         <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
         <sys_policy/>
         <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
         <sys_update_name>sys_ws_operation_ffe25d56c393cf10f9ef98bc05013132</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-15 08:38:59</sys_updated_on>
+        <sys_updated_on>2026-09-17 02:55:57</sys_updated_on>
         <web_service_definition display_value="Ledger">5680551ac353cf10f9ef98bc05013145</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

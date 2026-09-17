@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <access_method>btree</access_method>
+        <col_name_string>name,version</col_name_string>
+        <index_col_name>7fceac96c31f8f10f9ef98bc05013139,86aba16ac3db4350f9ef98bc050131c8</index_col_name>
+        <logical_table_name>x_1821654_governa_policy</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2026-09-16 05:25:51</sys_created_on>
+        <sys_id>4583fd6ec31f4350f9ef98bc05013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1821654_governa_policy</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_index_x_1821654_governa_policy_name_version</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2026-09-16 05:25:51</sys_updated_on>
+        <table display_value="Governa Policy" name="x_1821654_governa_policy">7b9ee09ec3db8f10f9ef98bc05013115</table>
+        <unique_index>true</unique_index>
+    </sys_index>
+</record_update>

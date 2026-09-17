@@ -2,6 +2,7 @@
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="15df2c5ac31f8f10f9ef98bc050131f2" label="Governa Run" max_length="40" name="x_1821654_governa_run" type="collection">
         <element label="Task version" max_length="40" name="task_version" type="string"/>
         <element label="Input tokens" max_length="40" name="input_tokens" type="integer"/>
+        <element label="Agent Version" max_length="40" name="agent_version" type="string"/>
         <element choice="1" label="Outcome" max_length="40" name="outcome" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Timeout" value="timeout"/>
@@ -12,11 +13,13 @@
             </choice>
         </element>
         <element label="Trace hash" max_length="64" name="trace_hash" type="string"/>
+        <element label="Policy set hash" max_length="64" name="policy_set_hash" type="string"/>
         <element label="Task ID" max_length="100" name="task_id" type="string"/>
         <element default="javascript:global.getNextObjNumberPadded(current)" label="Number" max_length="100" name="number" type="string"/>
         <element label="Steps" max_length="40" name="steps" type="integer"/>
         <element label="Harness version" max_length="40" name="harness_version" type="string"/>
         <element label="Started at" max_length="40" name="started_at" type="glide_date_time"/>
+        <element label="Eval batch" max_length="80" name="eval_batch" type="string"/>
         <element label="Agent" max_length="32" name="agent" reference="x_1821654_governa_agent" type="reference"/>
         <element label="Seed" max_length="40" name="seed" type="string"/>
         <element label="Ended at" max_length="40" name="ended_at" type="glide_date_time"/>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description>Default access control on x_1821654_governa_governa_control</description>
+        <local_or_existing>Existing</local_or_existing>
+        <name>x_1821654_governa_governa_control</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 04:08:40</sys_created_on>
+        <sys_id>12d1ed22c39b4350f9ef98bc05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1821654_governa_governa_control</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_security_acl_12d1ed22c39b4350f9ef98bc05013102</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 04:08:40</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</application>
+        <file_path/>
+        <instance_id>ab181c013be46e18a36804e0b5e45a68</instance_id>
+        <instance_name>dev310526</instance_name>
+        <name>sys_security_acl_12d1ed22c39b4350f9ef98bc05013102</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Default access control on x_1821654_governa_governa_control</description><local_or_existing>Existing</local_or_existing><name>x_1821654_governa_governa_control</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-16 04:08:40</sys_created_on><sys_id>12d1ed22c39b4350f9ef98bc05013102</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1821654_governa_governa_control</sys_name><sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package><sys_policy/><sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope><sys_update_name>sys_security_acl_12d1ed22c39b4350f9ef98bc05013102</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-16 04:08:40</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-1367362848</payload_hash>
+        <record_name>x_1821654_governa_governa_control</record_name>
+        <reverted_from/>
+        <source>ee4985a6c3974350f9ef98bc0501319a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 04:08:40</sys_created_on>
+        <sys_id>5ed1ed22c39b4350f9ef98bc0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0a8670a680000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 04:08:40</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>1ed1ed22e39b4350ff9c588df590ab2b</update_guid>
+        <update_guid_history>1ed1ed22e39b4350ff9c588df590ab2b:-1367362848</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 05:03:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>e5e0f042bcf944609aaa41183c67f904</sys_id>
+        <sys_metadata>12d1ed22c39b4350f9ef98bc05013102</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1821654_governa_governa_control</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_parent display_value="">1ed1ed22c39b4350f9ef98bc05013161</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_scope_delete display_value="">1c26bb83a1c648838b2c88c4ee127a31</sys_scope_delete>
+        <sys_update_name>sys_security_acl_12d1ed22c39b4350f9ef98bc05013102</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_12d1ed22c39b4350f9ef98bc05013102">5ed1ed22c39b4350f9ef98bc0501312c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 05:03:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

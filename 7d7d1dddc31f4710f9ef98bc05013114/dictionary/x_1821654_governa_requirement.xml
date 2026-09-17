@@ -5,6 +5,7 @@
         <element choice="1" label="Source" max_length="40" name="source" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Internal" value="internal"/>
+                <element inactive_on_update="false" label="JP AI guideline" value="jp_ai_guideline"/>
                 <element inactive_on_update="false" label="Eu AI Act" value="eu_ai_act"/>
                 <element inactive_on_update="false" label="Customer" value="customer"/>
             </choice>

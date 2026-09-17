@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="416eedeec3db4350f9ef98bc050131eb" label="Governa Control" max_length="40" name="x_1821654_governa_control" type="collection">
+        <element label="Last Evaluated" max_length="40" name="last_evaluated" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Objective" max_length="1000" name="objective" type="string"/>
+        <element choice="1" label="Enforcement" max_length="40" name="enforcement" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Instance" value="instance"/>
+                <element inactive_on_update="false" label="Harness" value="harness"/>
+                <element inactive_on_update="false" label="Both" value="both"/>
+            </choice>
+        </element>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Effective" value="effective"/>
+                <element inactive_on_update="false" label="Not Triggered" value="not_triggered"/>
+                <element inactive_on_update="false" label="Failed" value="failed"/>
+            </choice>
+        </element>
+        <element label="Requirement" max_length="32" name="requirement" reference="x_1821654_governa_requirement" type="reference"/>
+        <index name="index">
+            <element name="requirement"/>
+        </index>
+    </element>
+</database>

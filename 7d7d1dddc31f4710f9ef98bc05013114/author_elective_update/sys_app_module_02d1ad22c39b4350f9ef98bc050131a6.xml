@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Governa Control">8ed1ad22c39b4350f9ef98bc05013186</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Governa Controls</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1821654_governa_governa_control</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1821654_governa.governa_control_user</roles>
+        <route/>
+        <screen/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 04:08:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02d1ad22c39b4350f9ef98bc050131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Governa Controls</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_app_module_02d1ad22c39b4350f9ef98bc050131a6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 04:08:39</sys_updated_on>
+        <timeline_page/>
+        <title>Governa Controls</title>
+        <uncancelable>false</uncancelable>
+        <ux_list/>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</application>
+        <file_path/>
+        <instance_id>ab181c013be46e18a36804e0b5e45a68</instance_id>
+        <instance_name>dev310526</instance_name>
+        <name>sys_app_module_02d1ad22c39b4350f9ef98bc050131a6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Governa Control">8ed1ad22c39b4350f9ef98bc05013186</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Governa Controls</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1821654_governa_governa_control</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1821654_governa.governa_control_user</roles><route/><screen/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-16 04:08:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>02d1ad22c39b4350f9ef98bc050131a6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Governa Controls</sys_name><sys_overrides/><sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package><sys_policy/><sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope><sys_update_name>sys_app_module_02d1ad22c39b4350f9ef98bc050131a6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-16 04:08:39</sys_updated_on><timeline_page/><title>Governa Controls</title><uncancelable>false</uncancelable><ux_list/><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-459417588</payload_hash>
+        <record_name>Governa Controls</record_name>
+        <reverted_from/>
+        <source>ee4985a6c3974350f9ef98bc0501319a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 04:08:39</sys_created_on>
+        <sys_id>0ed1ad22c39b4350f9ef98bc050131aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0a86708520000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 04:08:39</sys_updated_on>
+        <type>Module</type>
+        <update_guid>8ad1ad22189b4350dd48c47fc94e65a9</update_guid>
+        <update_guid_history>8ad1ad22189b4350dd48c47fc94e65a9:-459417588</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Governa Controls">2e5ee9eec3db4350f9ef98bc050131dd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 05:03:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>6ddd2eb3b75d49f8b31842314f8c2a10</sys_id>
+        <sys_metadata>02d1ad22c39b4350f9ef98bc050131a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Governa Controls</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_scope_delete display_value="">1c26bb83a1c648838b2c88c4ee127a31</sys_scope_delete>
+        <sys_update_name>sys_app_module_02d1ad22c39b4350f9ef98bc050131a6</sys_update_name>
+        <sys_update_version display_value="sys_app_module_02d1ad22c39b4350f9ef98bc050131a6">0ed1ad22c39b4350f9ef98bc050131aa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 05:03:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

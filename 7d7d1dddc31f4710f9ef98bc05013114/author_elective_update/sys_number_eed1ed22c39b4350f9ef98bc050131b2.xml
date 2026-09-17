@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_1821654_governa_governa_control">x_1821654_governa_governa_control</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>CTL</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 04:08:41</sys_created_on>
+        <sys_id>eed1ed22c39b4350f9ef98bc050131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CTL</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_update_name>sys_number_eed1ed22c39b4350f9ef98bc050131b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 04:08:41</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</application>
+        <file_path/>
+        <instance_id>ab181c013be46e18a36804e0b5e45a68</instance_id>
+        <instance_name>dev310526</instance_name>
+        <name>sys_number_eed1ed22c39b4350f9ef98bc050131b2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_1821654_governa_governa_control">x_1821654_governa_governa_control</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>CTL</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-09-16 04:08:41</sys_created_on><sys_id>eed1ed22c39b4350f9ef98bc050131b2</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CTL</sys_name><sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package><sys_policy/><sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope><sys_update_name>sys_number_eed1ed22c39b4350f9ef98bc050131b2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-16 04:08:41</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>-904950237</payload_hash>
+        <record_name>CTL</record_name>
+        <reverted_from/>
+        <source>ee4985a6c3974350f9ef98bc0501319a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 04:08:41</sys_created_on>
+        <sys_id>e2d1ed22c39b4350f9ef98bc050131d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a0a86710bf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 04:08:41</sys_updated_on>
+        <type>Number</type>
+        <update_guid>a2d1ed22199b435062c199bd318e38d5</update_guid>
+        <update_guid_history>a2d1ed22199b435062c199bd318e38d5:-904950237</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-16 05:03:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>66470c0353e246889dd149a89d9496c4</sys_id>
+        <sys_metadata>eed1ed22c39b4350f9ef98bc050131b2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CTL</sys_name>
+        <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+        <sys_parent display_value="">3aa1e522c39b4350f9ef98bc050131b8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+        <sys_scope_delete display_value="">1c26bb83a1c648838b2c88c4ee127a31</sys_scope_delete>
+        <sys_update_name>sys_number_eed1ed22c39b4350f9ef98bc050131b2</sys_update_name>
+        <sys_update_version display_value="sys_number_eed1ed22c39b4350f9ef98bc050131b2">e2d1ed22c39b4350f9ef98bc050131d6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-16 05:03:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

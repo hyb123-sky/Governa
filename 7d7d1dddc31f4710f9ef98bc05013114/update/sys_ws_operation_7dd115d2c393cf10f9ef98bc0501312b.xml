@@ -20,6 +20,11 @@
     gr.setValue('task_version', body.task_version || '');
     gr.setValue('seed', body.seed || '');
     gr.setValue('harness_version', body.harness_version || '');
+    
+    if (body.eval_batch) gr.setValue('eval_batch', body.eval_batch);
+    if (body.agent_version) gr.setValue('agent_version', body.agent_version);
+    if (body.policy_set_hash) gr.setValue('policy_set_hash', body.policy_set_hash);
+    
     gr.setValue('started_at', new GlideDateTime());
     var sysId = gr.insert();
     if (!sysId) { response.setStatus(500); return { error: 'insert failed' }; }
@@ -40,14 +45,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-15 08:24:10</sys_created_on>
         <sys_id>7dd115d2c393cf10f9ef98bc0501312b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Create run</sys_name>
         <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
         <sys_policy/>
         <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
         <sys_update_name>sys_ws_operation_7dd115d2c393cf10f9ef98bc0501312b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-15 08:36:49</sys_updated_on>
+        <sys_updated_on>2026-09-16 05:42:04</sys_updated_on>
         <web_service_definition display_value="Ledger">5680551ac353cf10f9ef98bc05013145</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="policy_rule_hash" label="Policy rule hash" language="en" table="x_1821654_governa_action">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>policy_rule_hash</element>
+            <help/>
+            <hint/>
+            <label>Policy rule hash</label>
+            <language>en</language>
+            <name>x_1821654_governa_action</name>
+            <plural>Policy rule hashes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-16 05:36:28</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Policy rule hash</sys_name>
+            <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
+            <sys_update_name>sys_documentation_x_1821654_governa_action_policy_rule_hash_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-16 05:36:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
