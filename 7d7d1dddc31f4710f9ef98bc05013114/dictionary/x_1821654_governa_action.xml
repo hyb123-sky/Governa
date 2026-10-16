@@ -2,12 +2,25 @@
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1184f896c35f8f10f9ef98bc05013178" label="Governa Action" max_length="40" name="x_1821654_governa_action" type="collection">
         <element label="Target table" max_length="80" name="target_table" type="string"/>
         <element label="Run" max_length="32" name="run" reference="x_1821654_governa_run" type="reference"/>
+        <element choice="1" label="Instance outcome" max_length="40" name="instance_outcome" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="unknown" value="unknown"/>
+                <element inactive_on_update="false" label="Aborted by rule" value="aborted_by_rule"/>
+                <element inactive_on_update="false" label="Error" value="error"/>
+                <element inactive_on_update="false" label="Denied by acl" value="denied_by_acl"/>
+                <element inactive_on_update="false" label="Applied" value="applied"/>
+                <element inactive_on_update="false" label="Denied by data policy" value="denied_by_data_policy"/>
+                <element inactive_on_update="false" label="Not attempted" value="not_attempted"/>
+            </choice>
+        </element>
         <element label="Oversight" max_length="32" name="oversight" reference="x_1821654_governa_oversight" type="reference"/>
         <element label="Params hash" max_length="64" name="params_hash" type="string"/>
         <element label="Policy" max_length="32" name="policy" reference="x_1821654_governa_policy" type="reference"/>
         <element label="Occurred at" max_length="40" name="occurred_at" type="glide_date_time"/>
+        <element label="Pre state hash" max_length="64" name="pre_state_hash" type="string"/>
         <element label="Latency MS" max_length="40" name="latency_ms" type="integer"/>
         <element label="Target sys_id" max_length="32" name="target_sys_id" type="string"/>
+        <element label="Enforcing artifact" max_length="200" name="enforcing_artifact" type="string"/>
         <element label="Policy version" max_length="40" name="policy_version" type="integer"/>
         <element label="Tool" max_length="100" name="tool" type="string"/>
         <element label="Sequence" max_length="40" name="sequence" type="integer"/>
@@ -15,12 +28,13 @@
         <element label="Deny reason" max_length="1000" name="deny_reason" type="string"/>
         <element choice="1" label="Policy decision" max_length="40" name="policy_decision" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Allow"/>
-                <element inactive_on_update="false" label="Needs approval"/>
-                <element inactive_on_update="false" label="Deny"/>
+                <element inactive_on_update="false" label="Allow" value="allow"/>
+                <element inactive_on_update="false" label="Needs approval" value="needs_approval"/>
+                <element inactive_on_update="false" label="Deny" value="deny"/>
             </choice>
         </element>
-        <element label="Policy rule hash" max_length="64" name="policy_rule_hash" type="string"/>
+        <element label="Policy content hash" max_length="64" name="policy_content_hash" type="string"/>
+        <element label="Policy rule hash (deprecated)" max_length="64" name="policy_rule_hash" type="string"/>
         <element label="Executed" max_length="40" name="executed" type="boolean"/>
         <index name="index">
             <element name="oversight"/>

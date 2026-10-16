@@ -7,12 +7,30 @@
         <enforce_acl>4075d11ec393cf10f9ef98bc050131c3</enforce_acl>
         <http_method>POST</http_method>
         <name>Create run</name>
-        <operation_script><![CDATA[(function process(request, response) {
-    var body = request.body.data;
-    if (!body.task_id || !body.agent) {
-        response.setStatus(400);
-        return { error: 'task_id and agent are required' };
+        <operation_script><![CDATA[// Scripted REST: POST /api/x_1821654_governa/ledger/runs
+// v0.3 §4.3 / §8.2（2026-09-20 G）: 来歴列を作成時に確定する。
+// 来歴が欠けた run は「どの版で何が起きたか」を説明できないため 400 で拒否する。
+(function process(request, response) {
+    var body = request.body.data || {};
+
+    var required = ['task_id', 'agent', 'policy_set_hash', 'harness_commit', 'prompt_hash', 'tool_schema_hash'];
+    var missing = [];
+    for (var i = 0; i < required.length; i++) {
+        if (!body[required[i]]) missing.push(required[i]);
     }
+    if (missing.length) {
+        response.setStatus(400);
+        return { error: 'required: ' + missing.join(', ') };
+    }
+    var hex64 = /^[0-9a-f]{64}$/;
+    var hashes = ['policy_set_hash', 'prompt_hash', 'tool_schema_hash'];
+    for (var h = 0; h < hashes.length; h++) {
+        if (!hex64.test(String(body[hashes[h]]))) {
+            response.setStatus(400);
+            return { error: hashes[h] + ' must be 64 lowercase hex chars' };
+        }
+    }
+
     var gr = new GlideRecord('x_1821654_governa_run');
     gr.initialize();
     gr.setValue('agent', body.agent);
@@ -20,17 +38,25 @@
     gr.setValue('task_version', body.task_version || '');
     gr.setValue('seed', body.seed || '');
     gr.setValue('harness_version', body.harness_version || '');
-    
+    gr.setValue('harness_commit', body.harness_commit);
+    gr.setValue('prompt_hash', body.prompt_hash);
+    gr.setValue('tool_schema_hash', body.tool_schema_hash);
+    gr.setValue('policy_set_hash', body.policy_set_hash);
+    if (body.policy_snapshot_at) {
+        var snap = new GlideDateTime();
+        snap.setValue(String(body.policy_snapshot_at));   // UTC "YYYY-MM-DD HH:MM:SS"
+        gr.setValue('policy_snapshot_at', snap);
+    }
     if (body.eval_batch) gr.setValue('eval_batch', body.eval_batch);
     if (body.agent_version) gr.setValue('agent_version', body.agent_version);
-    if (body.policy_set_hash) gr.setValue('policy_set_hash', body.policy_set_hash);
-    
+
     gr.setValue('started_at', new GlideDateTime());
     var sysId = gr.insert();
     if (!sysId) { response.setStatus(500); return { error: 'insert failed' }; }
     response.setStatus(201);
     return { sys_id: sysId, number: gr.getValue('number') };
-})(request, response);]]></operation_script>
+})(request, response);
+]]></operation_script>
         <operation_uri>/api/x_1821654_governa/ledger/runs</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
         <produces_customized>false</produces_customized>
@@ -45,14 +71,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-15 08:24:10</sys_created_on>
         <sys_id>7dd115d2c393cf10f9ef98bc0501312b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Create run</sys_name>
         <sys_package display_value="Governa" source="x_1821654_governa">7d7d1dddc31f4710f9ef98bc05013114</sys_package>
         <sys_policy/>
         <sys_scope display_value="Governa">7d7d1dddc31f4710f9ef98bc05013114</sys_scope>
         <sys_update_name>sys_ws_operation_7dd115d2c393cf10f9ef98bc0501312b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-16 05:42:04</sys_updated_on>
+        <sys_updated_on>2026-09-29 06:47:25</sys_updated_on>
         <web_service_definition display_value="Ledger">5680551ac353cf10f9ef98bc05013145</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>
